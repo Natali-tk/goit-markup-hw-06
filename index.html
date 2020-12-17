@@ -47,27 +47,33 @@
        
        <form class="form">
          <h2 class="form-title"> Оставьте свои данные, мы вам перезвоним </h2>
-       <div class="form-content">
-       <div  class="form-field">
+       <ul class="form-content">
+       <li  class="form-field">
          <label for="name" class="form-lable">Имя</label>
          <input type="text" class="form-input" name="name" id="name">
-         <span ><svg class="form-icon"><use href="./img/symbol-defs.svg#icon-person-black"></use></svg> </span>
-       </div>
-       <div  class="form-field">
+         <svg class="form-icon"><use href="./img/symbol-defs.svg#icon-person-black"></use></svg>
+       </li>
+       <li  class="form-field">
         <label for="tel" class="form-lable">Телефон</label>
         <input type="tel" class="form-input" name="telephon" id="tel">
-        <span><svg class="form-icon"><use href="./img/symbol-defs.svg#icon-phone-black"></use></svg> </span>
-       </div>
-       <div  class="form-field">
+        <svg class="form-icon"><use href="./img/symbol-defs.svg#icon-phone-black"></use></svg> 
+       </li>
+       <li  class="form-field">
         <label for="mail" class="form-lable">Почта</label>
         <input type="email" class="form-input" name="mail" id="mail">
-        <span><svg class="form-icon"><use href="./img/symbol-defs.svg#icon-email-black"></use></svg> </span>
-       </div>
-       <div  class="form-field">
+        <svg class="form-icon"><use href="./img/symbol-defs.svg#icon-email-black"></use></svg> 
+       </li>
+       <li  class="form-field">
         <label for="comment" class="form-lable">Комментарий</label>
         <textarea class="comment" name="comment" id="comment"  rows="8" placeholder="Введите текст"></textarea>
-       </div>
-       </div>
+       </li>
+      </ul>
+      <label class="checkbox-lable">
+        <input  class="checkbox" type="checkbox" name="agreement">
+        <span class="checkbox-icon"> </span>
+        Соглашаюсь с рассылкой и принимаю &nbsp <a href="#" class="agreement-link">Условия договора</a>
+      </label>
+      <button  type="button" class="button">Отправить</button>
        </form>
       </div>
      </div>
