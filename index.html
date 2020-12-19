@@ -45,35 +45,33 @@
        <div class="modal">
          <button type="button" class="close-btn" data-modal-close><svg class="close-icon"><use href="./img/symbol-defs.svg#icon-close-black"></use></svg></button>
        
-       <form class="form">
+       <form  action="#" class="form">
          <h2 class="form-title"> Оставьте свои данные, мы вам перезвоним </h2>
-       <ul class="form-content">
-       <li  class="form-field">
+       
+       <div  class="form-field">
          <label for="name" class="form-lable">Имя</label>
          <input type="text" class="form-input" name="name" id="name">
          <svg class="form-icon"><use href="./img/symbol-defs.svg#icon-person-black"></use></svg>
-       </li>
-       <li  class="form-field">
+       </div>
+       <div  class="form-field">
         <label for="tel" class="form-lable">Телефон</label>
         <input type="tel" class="form-input" name="telephon" id="tel">
         <svg class="form-icon"><use href="./img/symbol-defs.svg#icon-phone-black"></use></svg> 
-       </li>
-       <li  class="form-field">
+       </div>
+       <div  class="form-field">
         <label for="mail" class="form-lable">Почта</label>
         <input type="email" class="form-input" name="mail" id="mail">
         <svg class="form-icon"><use href="./img/symbol-defs.svg#icon-email-black"></use></svg> 
-       </li>
-       <li  class="form-field">
+       </div>
+       <div  class="form-field">
         <label for="comment" class="form-lable">Комментарий</label>
         <textarea class="comment" name="comment" id="comment"  rows="8" placeholder="Введите текст"></textarea>
-       </li>
-      </ul>
-      <label class="checkbox-lable">
-        <input  class="checkbox" type="checkbox" name="agreement">
-        <span class="checkbox-icon"> </span>
-        Соглашаюсь с рассылкой и принимаю &nbsp <a href="#" class="agreement-link">Условия договора</a>
-      </label>
-      <button  type="button" class="button">Отправить</button>
+       </div>
+       <div class="checkbox">
+       <input  class="form-checkbox visually-hidden" type="checkbox" name="user-agreement" id="user-agreement" value="accept agreement">
+       <label for="user-agreement" class="checkbox-agreement">Соглашаюсь с рассылкой и принимаю <a class="agreement-link">Условия договора</a></label>
+      </div>
+      <button  type="submit" class="button">Отправить</button>
        </form>
       </div>
      </div>
@@ -225,6 +223,7 @@
        <li class="item"><a href="tel:+380961111111" class="footer-tel" >+38 096 111 11 11</a></li>
      </ul>
     </address>
+    
      <div class="social-box">
      <b>ПРИСОЕДИНЯЙТЕСЬ</b>
      <ul class="social-list footer">
@@ -234,9 +233,17 @@
       <li class="item"><a href="#" class="social-links"><svg class="social-icon"> <use href="./img/symbol-defs.svg#icon-linkedin-1"></use></svg></a></li>
      </ul>
     </div>
-    
+     <div class="footer-form">
+       <b>Подпишитесь на рассылку</b>
+       <form class="form-asign">
+        <input type="email" class="footer form-input" name="mail"  placeholder="E-mail"> 
+        <button  type="submit" class="button footer" > Подписаться <svg class="icon-send"><use href="./img/iconsend.svg"></use></svg></button>
+      </form>
+      </div>
     </div>
+
    </footer>
+  
 
    <script src="./js/modal.js"></script> 
 
