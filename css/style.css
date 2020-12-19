@@ -727,12 +727,12 @@ border-bottom-left-radius: 4px;
     width: 18px;
     height: 18px;
     fill: #000000;
-    transition: fill 250ms var(--timing-function)
+    transition: fill 250ms var(--timing-function);
 }
 .close-btn:hover .close-icon,
 .close-btn:focus .close-icon{
     fill: var(--accent-btn-color);
-    transition: fill 250ms var(--timing-function)
+    
 }
 /* Форма модального окна */
 .form{
