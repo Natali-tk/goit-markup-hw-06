@@ -260,8 +260,8 @@ header{
     background-color: var(--secondary-bg-color); 
 }
 .feature-icon {
-width: 70px;
-height: 70px;
+    width: 70px;
+    height: 70px;
 }
 
 .section-function,
@@ -511,7 +511,9 @@ b{
     border: 1px solid var(--accent-btn-color);
     border-radius: 4px;
     padding: 10px 32px;
+    margin:auto;
     min-width: 200px;
+    height: 50px;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -696,10 +698,10 @@ border-bottom-left-radius: 4px;
     top:50%;
     transform:translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--timing-function);
-    max-width: 528px;
-    max-height: 581px;
+    width: 528px;
+    min-height: 581px;
     margin:0;
-    padding:0;
+    padding:40px;
     background-color:var(--primary-white-color);
 
 }
@@ -734,13 +736,11 @@ border-bottom-left-radius: 4px;
 }
 /* Форма модального окна */
 .form{
-    margin: 0;
-    padding: 40px;
-   
+    display: flex;
+    flex-direction: column;
+    margin:0;
 }
-.form-content{
-    margin-bottom:20px;
-}
+
 .form-title {
     font-weight: 700;
     font-size: 20px;
@@ -750,29 +750,21 @@ border-bottom-left-radius: 4px;
     margin-bottom: 12px;
 
 }
- .form-field{
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     position: relative;
-     
-     
+.form-field { 
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: 0.01em;
+
+   text-align:left;
+   margin-bottom: 10px;
  }
- .form-lable{
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    margin-bottom: 4px;
-    text-align:left;
-    color:var(--primary-text-color);
- }
+
  .form-input{
-     position: relative;
+
      margin: 0;
      width: 100%;
-     max-height: 40px;
-     padding: 11px 42px 12px;
-     margin-bottom: 10px;
+     height: 40px;
+     padding-left:42px;
      border: 1px solid rgba(33, 33, 33, 0.2);
      border-radius: 4px;
      transition: border 250ms var(--timing-function);
@@ -791,44 +783,57 @@ border-bottom-left-radius: 4px;
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    margin-bottom:20px;
     resize: none;
     transition: border 250ms var(--timing-function);
+} 
+.form-field.texterea{
+    margin-bottom:4px; 
+
+}
+
+.form-wraper{
+    position: relative;
+    display: block;
+    margin-top: 4px;
 }
 .form-icon{
     position: absolute;
+    display: block;
     top: 50%;
+    transform: translateY(-50%);
     left: 12px;
     width: 18px;
     height: 18px;
     fill:var(--title-text-color);
-    display: inline-block;
+
     transition: fill 250ms var(--timing-function);
 
 }
 
 .form-input:focus,
 .comment:focus{
-    border: 1px solid var(--accent-btn-color);  
+    border-color: var(--accent-btn-color); 
+    outline: none; 
 }
 
-.form-input:hover + .form-icon,
+
 .form-input:focus + .form-icon {
-    fill: var(--accent-btn-color);  
-}
-.form-icon:hover{
     fill: var(--accent-btn-color);
 }
-.checkbox{
-    
-    margin-top:20px;
-    margin-bottom: 30px;
+
+.form-wraper:hover .form-icon {
+    fill: var(--accent-btn-color); 
+    transition: fill 250ms var(--timing-function);
 }
 
- .checkbox-agreement{
+.checkbox-agreement{
+    display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: 1.71;
-    padding-left:14px;;
-    
+    padding-left: 14px;
+    margin-bottom: 30px;
 }
 
 .checkbox-agreement::before{
@@ -850,15 +855,15 @@ border-bottom-left-radius: 4px;
     background-size: contain;
     background-origin: content-box;
 } 
+
 .agreement-link{
-    display: inline-block;
+
     text-decoration: underline;
     text-decoration-skip-ink:none;
     color:var(--accent-btn-color);
 }
 
-
-
+/* Форма в футере */
 .footer-form{
     display: block;
     padding-top:72px;
@@ -870,13 +875,13 @@ border-bottom-left-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 .footer.form-input{
     font-size: 16px;
     line-height: 1.25;
-    
-    
+
+
     color: rgba(255, 255, 255, 0.6);
     padding: 16px 15px;
     background-color: inherit;
@@ -897,6 +902,7 @@ border-bottom-left-radius: 4px;
     background-origin: content-box;
     margin-left:10px;
 }
+
 .button.footer{
     display: flex;
     justify-content: center;

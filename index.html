@@ -39,38 +39,46 @@
    <section class="hero">
 
      <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-     <button  type="button" class="button" data-modal-open>Заказать услугу</button>
+     <button  type="button" class="button" data-modal-open> Заказать услугу </button>
      <div class="backdrop is-hidden" data-modal>
       
        <div class="modal">
          <button type="button" class="close-btn" data-modal-close><svg class="close-icon"><use href="./img/symbol-defs.svg#icon-close-black"></use></svg></button>
-       
-       <form  action="#" class="form">
+         
+         <form  action="#" class="form">
+        
          <h2 class="form-title"> Оставьте свои данные, мы вам перезвоним </h2>
        
-       <div  class="form-field">
-         <label for="name" class="form-lable">Имя</label>
-         <input type="text" class="form-input" name="name" id="name">
+         <label class="form-field">
+          Имя
+         <span class="form-wraper">
+         <input type="text" class="form-input" name="name" >
          <svg class="form-icon"><use href="./img/symbol-defs.svg#icon-person-black"></use></svg>
-       </div>
-       <div  class="form-field">
-        <label for="tel" class="form-lable">Телефон</label>
-        <input type="tel" class="form-input" name="telephon" id="tel">
-        <svg class="form-icon"><use href="./img/symbol-defs.svg#icon-phone-black"></use></svg> 
-       </div>
-       <div  class="form-field">
-        <label for="mail" class="form-lable">Почта</label>
-        <input type="email" class="form-input" name="mail" id="mail">
-        <svg class="form-icon"><use href="./img/symbol-defs.svg#icon-email-black"></use></svg> 
-       </div>
-       <div  class="form-field">
-        <label for="comment" class="form-lable">Комментарий</label>
-        <textarea class="comment" name="comment" id="comment"  rows="8" placeholder="Введите текст"></textarea>
-       </div>
-       <div class="checkbox">
-       <input  class="form-checkbox visually-hidden" type="checkbox" name="user-agreement" id="user-agreement" value="accept agreement">
-       <label for="user-agreement" class="checkbox-agreement">Соглашаюсь с рассылкой и принимаю <a class="agreement-link">Условия договора</a></label>
-      </div>
+         </span>
+         </label>
+         <label class="form-field">
+          Телефон
+         <span class="form-wraper">
+         <input type="tel" class="form-input" name="telephon" >
+         <svg class="form-icon"><use href="./img/symbol-defs.svg#icon-phone-black"></use></svg> 
+         </span> 
+         </label>
+       
+         <label class="form-field">
+          Почта
+         <span class="form-wraper">
+         <input type="email" class="form-input" name="mail" >
+         <svg class="form-icon"><use href="./img/symbol-defs.svg#icon-email-black"></use></svg> 
+         </span> 
+        </label>
+      
+         <label  class="form-field texterea" name="comment" >Комментарий </label>
+         <textarea class="comment" name="comment" placeholder="Введите текст"></textarea>
+         
+       
+         <input  class="form-checkbox visually-hidden" type="checkbox" name="user-agreement" id="user-agreement" value="accept agreement">
+         <label for="user-agreement" class="checkbox-agreement">Соглашаюсь с рассылкой и принимаю &nbsp;<a class="agreement-link"> Условия договора </a></label>
+    
       <button  type="submit" class="button">Отправить</button>
        </form>
       </div>
@@ -235,7 +243,7 @@
     </div>
      <div class="footer-form">
        <b>Подпишитесь на рассылку</b>
-       <form class="form-asign">
+       <form class="form-asign" action="#">
         <input type="email" class="footer form-input" name="mail"  placeholder="E-mail"> 
         <button  type="submit" class="button footer" > Подписаться <svg class="icon-send"><use href="./img/iconsend.svg"></use></svg></button>
       </form>
